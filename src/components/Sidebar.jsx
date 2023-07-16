@@ -1,20 +1,15 @@
 import React from "react";
+import SidebarAccordion from "./SidebarAccordion";
+import { listOne, listTwo } from "../constants";
+import { useSelector } from "react-redux";
 
 const Sidebar = () => {
-  const geners = [
-    { title: "Music" },
-    { title: "Sports" },
-    { title: "Gaming" },
-    { title: "Movies" },
-  ];
+  const show = useSelector((state) => state.app.isSidedrawerOpen);
+  if (!show) return;
   return (
-    <div className="p-5 shadow-lg basis-1/4">
-      <h1>Subscriptions</h1>
-      <ul>
-        {geners.map(({ title }) => (
-          <li key={title}>{title}</li>
-        ))}
-      </ul>
+    <div className="p-5 shadow-lg basis-1/6">
+      <SidebarAccordion geners={listOne} />
+      <SidebarAccordion geners={listTwo} />
     </div>
   );
 };

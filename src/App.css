@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .sidebar-icons {
+    @apply h-8;
+  }
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../public/fonts/FilsonProRegular.otf");
+}
+@font-face {
+  font-family: "medium";
+  src: url("../public/fonts/FilsonProMedium.otf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../public/fonts/FilsonProBold.otf");
+}
+
+body {
+  font-family: regular;
+}

@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        filsonRegular: ["regular"],
+        filsonMedium: ["medium"],
+        filsonBold: ["bold"],
+      },
+    },
   },
   plugins: [],
 };
