@@ -8,7 +8,7 @@ const VideoCard = ({ data }) => {
     <div className="max-w-[380px]">
       <img
         src={thumbnails?.high?.url}
-        className="rounded-2xl min-w-[380px] max-h-[234px]"
+        className="rounded-2xl md:min-w-[320px] lg:min-w-[380px] max-h-[234px]"
       />
       <div className="flex mt-2 gap-4">
         <div className="flex-shrink-0">

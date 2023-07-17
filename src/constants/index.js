@@ -55,4 +55,67 @@ export const YOUTUBE_API_SINGLE_VIDEO =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics";
 
 export const YOUTUBE_SEARCH_SUGGESTON_API =
-  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+
+export const NESTED_COMMENT_DATA = [
+  {
+    name: "Ichigo",
+    text: "Lorem ipsum dogare nckjshe klpkdiu ",
+    replies: [
+      {
+        name: "Ichigo",
+        text: "Lore",
+        replies: [],
+      },
+      {
+        name: "Ichigo",
+        text: "Lore",
+        replies: [
+          {
+            name: "Ichigo",
+            text: "Lore",
+            replies: [],
+          },
+          {
+            name: "Ichigo",
+            text: "Lore",
+            replies: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Ichigo",
+    text: "Lore",
+    replies: [
+      {
+        name: "Ichigo",
+        text: "Lore",
+        replies: [
+          {
+            name: "Ichigo",
+            text: "Lore",
+            replies: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Ichigo",
+    text: "Lore",
+    replies: [
+      {
+        name: "Ichigo",
+        text: "Lore",
+        replies: [],
+      },
+    ],
+  },
+  {
+    name: "Ichigo",
+    text: "Lore",
+    replies: [],
+  },
+];
